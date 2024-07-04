@@ -15,7 +15,7 @@
         };
     };
 };
-#endif  // MOUSE_PS2_ALT_PINS
+
 &spi3 {
     compatible = "nordic,nrf-spim";
     status = "okay";
@@ -49,3 +49,4 @@
         zmk,underglow = &led_strip;
     };
 };
+#endif  // MOUSE_PS2_ALT_PINS
