@@ -1,6 +1,6 @@
 #include <dt-bindings/led/led.h>
 
-ifndef MOUSE_PS2_ALT_PINS
+#ifndef MOUSE_PS2_ALT_PINS
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
@@ -15,7 +15,7 @@ ifndef MOUSE_PS2_ALT_PINS
         };
     };
 };
-endif  // MOUSE_PS2_ALT_PINS
+#endif  // MOUSE_PS2_ALT_PINS
 &spi3 {
     compatible = "nordic,nrf-spim";
     status = "okay";
