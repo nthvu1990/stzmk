@@ -177,22 +177,22 @@
       status = "okay";
     };
 
-    #ifdef MOUSE_PS2_DRIVER_UART
+    //#ifdef MOUSE_PS2_DRIVER_UART
 
-      &uart0 {
-        status = "okay";
-      };
+    //  &uart0 {
+    //    status = "okay";
+     // };
 
-      &uart_ps2 {
-        status="okay";
-      };
+     // &uart_ps2 {
+    //    status="okay";
+     // };
 
-    #else
+   // #else
 
-      &gpio_ps2  {
-        status = "okay";
-      };
+    //  &gpio_ps2  {
+    //    status = "okay";
+     // };
 
-    #endif  // MOUSE_PS2_DRIVER_UART
+    //#endif  // MOUSE_PS2_DRIVER_UART
   #endif  // MOUSE_PS2_DT_PRESENT
 #endif  // HAS_MOUSE_TP
