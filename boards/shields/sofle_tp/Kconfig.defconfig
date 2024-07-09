@@ -19,10 +19,10 @@ config ZMK_SPLIT
 if ZMK_DISPLAY
 
 config I2C
-    default n
+    default y
 
 config SSD1306
-    default n
+    default y
 
 endif # ZMK_DISPLAY
 
@@ -42,11 +42,5 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
-
-if ZMK_RGB_UNDERGLOW
-
-config WS2812_STRIP
-    default n
-endif
 
 endif
