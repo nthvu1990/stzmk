@@ -39,3 +39,4 @@
 &mouse_ps2_input_listener {
     x-invert;
 };
+CONFIG_ZMK_USB_LOGGING=y
